@@ -1,5 +1,10 @@
 name: Build and Push Docker Image to GHCR
 
+# Define permissões para o GITHUB_TOKEN
+permissions:
+  contents: read  # Permissão para ler o conteúdo do repositório
+  packages: write  # Permissão para empurrar pacotes no GHCR
+
 on:
   push:
     branches:
