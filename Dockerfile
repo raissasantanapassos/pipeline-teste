@@ -5,7 +5,7 @@ FROM python:3.11-slim
 WORKDIR /app
 
 # Copie o arquivo de requisitos para o contêiner (se você tiver um)
-COPY requirements.txt .
+COPY app/requirements.txt .
 
 # Instale as dependências do pip (se você tiver um arquivo requirements.txt)
 RUN pip install --upgrade pip
