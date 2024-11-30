@@ -33,7 +33,7 @@ jobs:
       with:
         registry: ghcr.io
         username: ${{ github.actor }}  # O nome do usuário do GitHub
-        token: ${{ secrets.GITHUB_TOKEN }}  # Token de autenticação do GitHub, gerado automaticamente
+        password: ${{ secrets.GITHUB_TOKEN }}  # Token de autenticação do GitHub, gerado automaticamente
 
     - name: Push Docker image to GHCR
       run: |
